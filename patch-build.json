@@ -1,0 +1,8 @@
+{
+  "source": "https://goatracer.ai/static/js/race/plant.js",
+  "sourceSha256": "92ddc8a86edb796d579355277e11166fedc7fddfc2ef06c7dfdcffe64533b831",
+  "patchedSha256": "6c0c71d85375cbace1e8f8e50ec329658079e495ef28d3f53364e4eac1c9b817",
+  "patchSha256": "1fae982eda25d7a430c37f7f0eae2b9f67c74a24916a4cb96eda53fea9290e79",
+  "target": "static/js/race/plant.js",
+  "scope": "Browser plant only. Authoritative Python server parity and deployment remain pending."
+}

@@ -1,0 +1,208 @@
+{
+  "result": "PASS",
+  "meaning": "The original false-lap behavior reproduced; the diagnostic accounting change rejected it and preserved the tested physical trajectories and valid laps.",
+  "runtime": "v24.10.0",
+  "task": "gump_v2_player",
+  "plantVersion": "race-plant-2",
+  "track": "Oval",
+  "trackLengthMetres": 77.69501780567047,
+  "inputs": {
+    "plant.js": "92ddc8a86edb796d579355277e11166fedc7fddfc2ef06c7dfdcffe64533b831",
+    "track_model.js": "1e22e2063c1cd2126065e3fc7e2e8a7f8baf5b01b1d56f7884a48b862df70cfb",
+    "race-params.json": "7a0325d17a0be8a9a6cda4e5b96cc7647a819b72974ec7dbe3e68a2225e450ee",
+    "oval-model.json": "f79b078870a3ff245f78851348e0ad216cc508cda098abe36bb26b04412f33ea"
+  },
+  "limitations": [
+    "Offline replay of published browser modules; live browser interactions and server score validation were not tested.",
+    "No neural policy, training reward, Isaac environment or physical car was tested.",
+    "Signed progress is a diagnostic correction; teleport, shortcut, projection, ranking and ghost behavior need an integration design."
+  ],
+  "cases": [
+    {
+      "name": "back-and-forth",
+      "ticks": 8948,
+      "simulatedSeconds": 596.5333333333333,
+      "originalLaps": 3,
+      "diagnosticLaps": 0,
+      "crashes": 0,
+      "minX": -10,
+      "maxX": -3.751734456257921,
+      "minY": -6,
+      "maxY": -6,
+      "excursionMetres": 6.248265543742079,
+      "signedArc": 5.196060568190274,
+      "originalForwardArc": 233.09747005576256,
+      "forwardStartCrossings": 0,
+      "centerlineIndicesVisited": 22,
+      "totalCenterlineIndices": 256,
+      "maxPhysicalDifference": 0,
+      "inputSha256": "f6ea357131de2e0eab18caa111d10dc986273eebd7390fafed33a9a0023108e3",
+      "events": {
+        "original": [
+          {
+            "tick": 2986,
+            "lap": 1,
+            "lapMs": 199057
+          },
+          {
+            "tick": 5967,
+            "lap": 2,
+            "lapMs": 198689
+          },
+          {
+            "tick": 8948,
+            "lap": 3,
+            "lapMs": 198764
+          }
+        ],
+        "diagnostic": []
+      }
+    },
+    {
+      "name": "three genuine forward laps",
+      "ticks": 3198,
+      "simulatedSeconds": 213.2,
+      "originalLaps": 3,
+      "diagnosticLaps": 3,
+      "crashes": 0,
+      "minX": -15.992710333760819,
+      "maxX": 15.992802154069087,
+      "minY": -6.0325633584925615,
+      "maxY": 6.03251063330029,
+      "excursionMetres": 31.985512487829908,
+      "signedArc": 233.12574451224603,
+      "originalForwardArc": 233.12574451224603,
+      "forwardStartCrossings": 3,
+      "centerlineIndicesVisited": 256,
+      "totalCenterlineIndices": 256,
+      "maxPhysicalDifference": 0,
+      "inputSha256": "4863160223b33046f03f014d6ae13f207f952931479309202be8c5541634d4e2",
+      "events": {
+        "original": [
+          {
+            "tick": 1068,
+            "lap": 1,
+            "lapMs": 71200
+          },
+          {
+            "tick": 2134,
+            "lap": 2,
+            "lapMs": 71000
+          },
+          {
+            "tick": 3198,
+            "lap": 3,
+            "lapMs": 70933
+          }
+        ],
+        "diagnostic": [
+          {
+            "tick": 1068,
+            "lap": 1,
+            "lapMs": 71200
+          },
+          {
+            "tick": 2134,
+            "lap": 2,
+            "lapMs": 71000
+          },
+          {
+            "tick": 3198,
+            "lap": 3,
+            "lapMs": 70933
+          }
+        ]
+      }
+    },
+    {
+      "name": "stationary",
+      "ticks": 1000,
+      "simulatedSeconds": 66.66666666666667,
+      "originalLaps": 0,
+      "diagnosticLaps": 0,
+      "crashes": 0,
+      "minX": -10,
+      "maxX": -10,
+      "minY": -6,
+      "maxY": -6,
+      "excursionMetres": 0,
+      "signedArc": 0,
+      "originalForwardArc": 0,
+      "forwardStartCrossings": 0,
+      "centerlineIndicesVisited": 1,
+      "totalCenterlineIndices": 256,
+      "maxPhysicalDifference": 0,
+      "inputSha256": "2e3942748ad8a913c8417556af525ee9456df7465e5ea89fabe7ce337b998c02",
+      "events": {
+        "original": [],
+        "diagnostic": []
+      }
+    },
+    {
+      "name": "backtracking followed by three genuine laps",
+      "ticks": 12067,
+      "simulatedSeconds": 804.4666666666667,
+      "originalLaps": 5,
+      "diagnosticLaps": 3,
+      "crashes": 0,
+      "minX": -15.992784098507423,
+      "maxX": 15.99267476617626,
+      "minY": -6.03256316519411,
+      "maxY": 6.032861116417087,
+      "excursionMetres": 31.985458864683682,
+      "signedArc": 233.08505341701172,
+      "originalForwardArc": 460.98646290458316,
+      "forwardStartCrossings": 3,
+      "centerlineIndicesVisited": 256,
+      "totalCenterlineIndices": 256,
+      "maxPhysicalDifference": 0,
+      "inputSha256": "0330e9648bc2eb6c50e636df080ed7a7465dbd883ceca42584aa32f055a1bf68",
+      "events": {
+        "original": [
+          {
+            "tick": 2986,
+            "lap": 1,
+            "lapMs": 199057
+          },
+          {
+            "tick": 5967,
+            "lap": 2,
+            "lapMs": 198689
+          },
+          {
+            "tick": 8948,
+            "lap": 3,
+            "lapMs": 198764
+          },
+          {
+            "tick": 10012,
+            "lap": 4,
+            "lapMs": 70941
+          },
+          {
+            "tick": 11076,
+            "lap": 5,
+            "lapMs": 70946
+          }
+        ],
+        "diagnostic": [
+          {
+            "tick": 9939,
+            "lap": 1,
+            "lapMs": 662600
+          },
+          {
+            "tick": 11003,
+            "lap": 2,
+            "lapMs": 70933
+          },
+          {
+            "tick": 12067,
+            "lap": 3,
+            "lapMs": 70933
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-10-16T18:20:56.440Z",
+  "browser": "Chrome",
+  "surface": "Local browser replay harness; original and patched published plant",
+  "result": "PASS",
+  "cases": [
+    {
+      "name": "Back and forth on one straight",
+      "originalLaps": 3,
+      "fixedLaps": 0,
+      "ticks": 8948,
+      "unchangedStateFields": [
+        "x",
+        "y",
+        "yaw",
+        "v",
+        "steer",
+        "wheel_u",
+        "drive",
+        "prev_x",
+        "prev_y",
+        "prev_arc",
+        "arc_travel",
+        "crashes",
+        "ray_min",
+        "crashed",
+        "contact",
+        "lateral",
+        "in_hit"
+      ],
+      "fixedEvents": [],
+      "result": "PASS"
+    },
+    {
+      "name": "Three genuine circuits",
+      "originalLaps": 3,
+      "fixedLaps": 3,
+      "ticks": 3198,
+      "unchangedStateFields": [
+        "x",
+        "y",
+        "yaw",
+        "v",
+        "steer",
+        "wheel_u",
+        "drive",
+        "prev_x",
+        "prev_y",
+        "prev_arc",
+        "arc_travel",
+        "crashes",
+        "ray_min",
+        "crashed",
+        "contact",
+        "lateral",
+        "in_hit"
+      ],
+      "fixedEvents": [
+        [
+          1068,
+          1,
+          71200
+        ],
+        [
+          2134,
+          2,
+          71000
+        ],
+        [
+          3198,
+          3,
+          70933
+        ]
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "Stationary",
+      "originalLaps": 0,
+      "fixedLaps": 0,
+      "ticks": 1000,
+      "unchangedStateFields": [
+        "x",
+        "y",
+        "yaw",
+        "v",
+        "steer",
+        "wheel_u",
+        "drive",
+        "prev_x",
+        "prev_y",
+        "prev_arc",
+        "arc_travel",
+        "crashes",
+        "ray_min",
+        "crashed",
+        "contact",
+        "lateral",
+        "in_hit"
+      ],
+      "fixedEvents": [],
+      "result": "PASS"
+    },
+    {
+      "name": "Backtracking, then three circuits",
+      "originalLaps": 5,
+      "fixedLaps": 3,
+      "ticks": 12067,
+      "unchangedStateFields": [
+        "x",
+        "y",
+        "yaw",
+        "v",
+        "steer",
+        "wheel_u",
+        "drive",
+        "prev_x",
+        "prev_y",
+        "prev_arc",
+        "arc_travel",
+        "crashes",
+        "ray_min",
+        "crashed",
+        "contact",
+        "lateral",
+        "in_hit"
+      ],
+      "fixedEvents": [
+        [
+          9939,
+          1,
+          662600
+        ],
+        [
+          11003,
+          2,
+          70933
+        ],
+        [
+          12067,
+          3,
+          70933
+        ]
+      ],
+      "result": "PASS"
+    }
+  ]
+}
